@@ -30,6 +30,11 @@ public EmpleTiempoCom() {
     public double calcularSalario() {
         return salarioBase + bonofijo;
     }
+    // Sobrescribir el método toString para mostrar la información del empleado a tiempo completo
+    @Override
+    public String toString() {
+        return "Empleado a tiempo completo: " + getNombre() + ", Departamento: " + getDepartamento() + ", Salario calculado: " + calcularSalario();
+    }
     
 
 }

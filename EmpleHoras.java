@@ -41,5 +41,11 @@ public class EmpleHoras extends Empleado {
     public double calcularSalario() {
         return salarioBase + (horasTrabajadas * tarifaHora);
     }
+
+    // Sobrescribir el método toString para mostrar la información del empleado por horas
+    @Override
+    public String toString() {
+        return "Empleado por horas: " + getNombre() + ", Departamento: " + getDepartamento() + ", Salario calculado: " + calcularSalario();
+    }
     
 }
